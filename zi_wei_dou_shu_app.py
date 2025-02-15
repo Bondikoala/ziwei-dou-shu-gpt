@@ -59,8 +59,8 @@ birth_hour = st.number_input("Enter Birth Hour", min_value=0, max_value=23, step
 
 if st.button("Generate Analysis"):
     zwds_chart_df = generate_zwds_chart(birth_year, birth_month, birth_day, birth_hour)
-st.markdown("## 🏮 Zi Wei Dou Shu Natal Chart 🏮")
-st.dataframe(zwds_chart_df)
+    st.subheader("Zi Wei Dou Shu Natal Chart")
+    st.dataframe(zwds_chart_df)
 
     life_palace_position = 0  # Placeholder, can be dynamically determined later
     ten_year_df = pd.DataFrame({"Ten-Year Cycle": calculate_ten_year_cycles(life_palace_position)})
