@@ -50,7 +50,7 @@ def calculate_yearly_fortune(current_year, birth_year, life_palace_position):
     return f"{current_year}: Influenced by {palaces[yearly_palace]}"
 
 # Streamlit UI
-st.title("Zi Wei Dou Shu Fortune Analysis")
+st.title("Stanny's Fortune Analysis")
 
 birth_year = st.number_input("Enter Birth Year", min_value=1900, max_value=2100, step=1, value=1983)
 birth_month = st.number_input("Enter Birth Month", min_value=1, max_value=12, step=1, value=4)
